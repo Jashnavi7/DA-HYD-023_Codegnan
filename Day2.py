@@ -1,4 +1,4 @@
-'''#multiassignment of variables
+#multiassignment of variables
 name,age,location = 'Jashnavi',22,'Hyderabad'
 print(name,age,location,sep=',')
 print(name,age,location,sep='         ')
@@ -12,15 +12,15 @@ print(a,b,sep=',')
 
 
 #deleting the variable
-del a,b
-print(a,b)
+#del a,b
+#print(a,b)
 
 
 name = 'codegnan' ; age = 7 ; course = 'Data Analysis'  #valid
 print(age,name)
 
 
-
+'''
 Punctuators ==> []-->(list), {}-->(dict,sets) , ()-->(tuples)
 
 name='codegnan' , age =7   #invalid syntax
@@ -36,7 +36,7 @@ float datatype --> salary,price,temp
 complex datatype --> combination of real and imaginary
 
 Boolean --> True / False    
-
+'''
 #int
 age = 7
 print(age)
@@ -65,13 +65,13 @@ print(error)
 print(type(error))
 
 
-Typecasting --> converting onr type to another type
+'''Typecasting --> converting onr type to another type
 python by default follows implicit type we dont need to mention datatype
 
 we will go for explicit conversion
 every built in datatype is a built in function
 int,float,complex,boolean
-typecasting --> int -->ArithmeticError float,complex,boolean
+typecasting --> int -->ArithmeticError float,complex,boolean'''
 
 #converting int to other datatypes
 age = 35
@@ -101,19 +101,20 @@ c = bool(discount)
 print(c)
 print(type(c))
 
+'''
 #converting complex to other types
 imag = 3+2j
 print(imag)
 a = int(imag)
 print(a)
-print(type(a))   #we cant convert them into other datatypes except boolean
+print(type(a))   #we cant convert them into other datatypes except boolean'''
 
 
 e = int(float(bool(complex(5))))
 print(e)
 
 a = bool(int(float(6)))
-print(a)'''
+print(a)
 
 f = 6 + 2.5 + 7j + True    # true adds one false adds nothing 
 print(f)
