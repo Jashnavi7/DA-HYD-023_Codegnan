@@ -1,4 +1,4 @@
-#Student Marks Manager
+'''#Student Marks Manager
 
 marks = []
 for i in range(3):
@@ -19,7 +19,9 @@ print(f'Length of marks: {len(marks)}')
 #Number List Analyser
 numbers = [20,10,30,20,40,20]
 numbers.sort()
-print(f'Ascending order of list:{numbers}')
+print('Ascending order of list')
+for i in numbers:
+    print(i)
 numbers.reverse()
 print(f'Descending order of list: {numbers}')
 search = int(input('Enter a number:'))
@@ -69,7 +71,7 @@ if 'John' in sets:
 print(sets.discard('David'))
 for ch in sets:
     print(ch)
-
+'''
 
 #Courses Student Comparision
 
@@ -89,4 +91,25 @@ superset = python_students.issuperset(da_students)
 print(f'Superset:{superset}')
 disjoint = python_students.isdisjoint(da_students)
 print(f'Disjoint:{disjoint}')
+
+if da_students.issubset(python_students):
+    print("DA is  subset of Python")
+else:
+    print("DA is not a subset of Python")
+    
+if python_students.issuperset(da_students):
+    print("Python is superset of DA")
+else:
+    print("Python is not a superset of DA")  
+if python_students.isdisjoint(da_students):
+    print("Both sets are Disjoint")
+else:
+    print("Both sets are not Disjoint")
+
+print("Union:")    
+for i in python_students.union(da_students):
+    print(i)
+print("Intersection:")
+for j in python_students.intersection(da_students):
+    print(j)
 
